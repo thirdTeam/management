@@ -5,7 +5,7 @@
                 <div class="jumbotron text-center" style="background:transparent !important">
                     <h1>Search</h1>
                     <p>Fill fields below and press "Find"</p>
-                    <form class="form-horizontal" role="form" method="post" action="./index.php?controller=search&action=result">
+                    <form class="form-horizontal" role="form" method="post" action="./index.php?controller=search&action=result&page=1">
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="profession">Profession:</label>
                             <div class="col-sm-10">
@@ -30,7 +30,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-4">
-                                <button type="submit" class="btn btn-default btn-block">Find</button>
+                                <button type="submit" name="find" class="btn btn-default btn-block">Find</button>
                             </div>
                         </div>
                     </form>

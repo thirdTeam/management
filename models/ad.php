@@ -19,4 +19,9 @@
             $this->url = $url;
         }
 
+        public function  __toString()
+        {
+            return $this->number."<br>".$this->position."<br>";
+        }
+
     }
