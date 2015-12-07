@@ -1,6 +1,6 @@
 <?php
     class ad{
-        public $number;
+        //public $number;
         public $position;
         public $salary;
         public $region;
@@ -8,9 +8,9 @@
         public $description;
         public $url;
 
-        public function __construct($number, $position, $salary, $region, $lastupdated, $description, $url)
+        public function __construct( $position, $salary, $region, $lastupdated, $description, $url)
         {
-            $this->number = $number;
+            //$this->number = $number;
             $this->position = $position;
             $this->salary = $salary;
             $this->region = $region;

@@ -1,6 +1,6 @@
 <?php
     class Parser {
-        private static $ad_list = NULL;
+        private static $ad_list = array();
         private static $ad_count = 0;
 
         private function __construct() {}
@@ -23,7 +23,7 @@
                     self::$ad_list = array();
                     foreach ($response->messages->msg as $msg) {
                         array_push(self::$ad_list, new ad(
-                            (string)$msg->number,
+                            //(string)$msg->number,
                             (string)$msg->position,
                             (string)$msg->salary,
                             (string)$msg->region,
@@ -39,4 +39,4 @@
                 return false;
             }
         }
-    }
+    }	

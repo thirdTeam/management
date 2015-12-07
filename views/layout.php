@@ -14,10 +14,24 @@
                 case 'search':
                     echo "Search";
                     break;
+                case 'profile':
+                    echo "Profile";
+                    break;
+                case 'create':
+                    echo "Create";
+                    break;
+                case 'signin':
+                    echo "Sign In";
+                    break;
             }
             ?></title>
     </head>
     <body>
-        <?php require_once('header.php'); require_once('routes.php');?>
+        <?php
+            require_once("check_auth.php");
+            $auth = check_auth();
+            require_once('header.php');
+            require_once('routes.php');
+        ?>
     </body>
 </html>

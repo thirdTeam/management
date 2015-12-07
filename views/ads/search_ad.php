@@ -5,7 +5,7 @@
         </div>
         <div class="panel-body">
             <h5><?php echo $ad->region?></h5>
-            <?php echo $ad->description?>
+            <?php echo nl2br($ad->description)?>
             <h5><?php echo $ad->salary?></h5>
             <h5><?php echo $ad->lastupdated?></h5>
             <div class="col-md-3 col-md-offset-9">

@@ -17,12 +17,21 @@
         <li <?php echo ($controller === 'search')?'class="active"':''; ?>>
           <a href="./index.php?controller=search&action=index">Search</a>
         </li>
-        <li>
-          <a href="./index.php?controller=pages&action=create">Create</a>
+        <li <?php echo ($controller === 'create')?'class="active"':''; ?>>
+          <a href="./index.php?controller=create&action=index">Create</a>
         </li>
-        <li>
-          <a href="./index.php?controller=pages&action=signin">Sign In</a>
+        <?php if($auth){?>
+          <li <?php echo ($controller === 'profile')?'class="active"':''; ?>>
+            <a href="./index.php?controller=profile&action=index">Profile</a>
+          </li>
+          <li>
+            <a href="./index.php?controller=profile&action=logout">Logout</a>
+          </li>
+        <?php } else { ?>
+        <li <?php echo ($controller === 'signin')?'class="active"':''; ?>>
+          <a href="./index.php?controller=signin&action=index">Sign In</a>
         </li>
+        <?php }?>
       </ul>
     </div>
   </div>

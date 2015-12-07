@@ -10,9 +10,9 @@
                     joomble.org resource api.</p>
                 <h3>Features</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">Find job or resume</li>
-                    <li class="list-group-item">Create new resume</li>
-                    <li class="list-group-item">Subscribe for newsletters about job and resumes</li>
+                    <li class="list-group-item">Find vacancy</li>
+                    <li class="list-group-item">Create new vacancy</li>
+                    <li class="list-group-item">Subscribe for newsletters about vacancies</li>
                 </ul>
             </div>
         </div>

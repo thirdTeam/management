@@ -19,12 +19,12 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="age">Age:</label>
+                            <!--<label class="control-label col-sm-2" for="age">Age:</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" id="age" name="age" placeholder="Enter age">
-                            </div>
+                            </div>-->
                             <label class="control-label col-sm-2" for="salary">Salary:</label>
-                            <div class="col-sm-4">
+                            <div class="col-sm-10">
                                 <input type="text" class="form-control" id="salary" name="salary" placeholder="Enter salary">
                             </div>
                         </div>
